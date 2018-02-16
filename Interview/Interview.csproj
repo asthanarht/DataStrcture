@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E695720-A941-4564-8370-0649FB5ADD23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interview</RootNamespace>
+    <AssemblyName>Interview</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayMatrix\ArrayProblems.cs" />
+    <Compile Include="ArrayMatrix\Matrix.cs" />
+    <Compile Include="Bit Manupulation\BitProblems.cs" />
+    <Compile Include="Classes\BinaryTreeNode.cs" />
+    <Compile Include="Classes\GenericNode.cs" />
+    <Compile Include="Classes\DoubleLinkListNode.cs" />
+    <Compile Include="Classes\Node.cs" />
+    <Compile Include="DataStructure\BinaryTree.cs" />
+    <Compile Include="DataStructure\DoubleLinkList.cs" />
+    <Compile Include="DataStructure\Queue.cs" />
+    <Compile Include="DataStructure\SingleLinkList.cs" />
+    <Compile Include="DataStructure\Stack.cs" />
+    <Compile Include="DesignPatterns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignPatterns.Designer.cs">
+      <DependentUpon>DesignPatterns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPattern\ClassPractise.cs" />
+    <Compile Include="DesignPattern\Observer\Consumer.cs" />
+    <Compile Include="DesignPattern\Observer\Models\Flight.cs" />
+    <Compile Include="DesignPattern\Observer\Models\Train.cs" />
+    <Compile Include="DesignPattern\Observer\Models\Transport.cs" />
+    <Compile Include="DesignPattern\Observer\Publisher.cs" />
+    <Compile Include="DesignPattern\Observer\ScheduleConsumer.cs" />
+    <Compile Include="DesignPattern\Observer\SchedulePublisher.cs" />
+    <Compile Include="DesignPattern\Observer\TransportList.cs" />
+    <Compile Include="DesignPattern\Singleton\Singleton.cs" />
+    <Compile Include="DesignPattern\Strategy\Automobile.cs" />
+    <Compile Include="DesignPattern\Strategy\BajajPulsar.cs" />
+    <Compile Include="DesignPattern\Strategy\MarutiAlto.cs" />
+    <Compile Include="DesignPattern\Strategy\_WheelsTwo.cs" />
+    <Compile Include="DesignPattern\Strategy\_WheelsFour.cs" />
+    <Compile Include="DesignPattern\Strategy\_WheelType.cs" />
+    <Compile Include="DynamicProgramming\DP.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\AudioShuffle.cs" />
+    <Compile Include="Games\Backtracking\Coin_Combination.cs" />
+    <Compile Include="Games\Backtracking\Maze_Route.cs" />
+    <Compile Include="Games\Backtracking\Sudoku.cs" />
+    <Compile Include="Games\ConvertIntegersToRoman.cs" />
+    <Compile Include="Games\Telephone.cs" />
+    <Compile Include="Games\tictactoe.cs" />
+    <Compile Include="Moderate\IntProblem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting\Sorting.cs" />
+    <Compile Include="String\StringProblems.cs" />
+    <EmbeddedResource Include="DesignPatterns.resx">
+      <DependentUpon>DesignPatterns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Games\SnakeNLadder.cs" />
+    <Compile Include="DynamicProgramming\RandomQuestion.cs" />
+    <Compile Include="Sorting\PrioQueue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tries\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
